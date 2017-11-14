@@ -5,15 +5,13 @@ const mongodb = require('mongodb').MongoClient;
 var books = [
     {
         title: 'War and Peace',
-        author: 'Andy Nguyen'
+        author: 'Andy Nguyen',
+        bookId: 656
     },
     {
-        title: 'War and Peace - final chapter',
-        author: 'Andy Nguyen'
-    },
-    {
-        title: 'War and Peace - the sequel',
-        author: 'Andy Nguyen'
+        title: 'Les Misrables',
+        author: 'Andy Nguyen',
+        bookId: 24280
     }
 ];
 
@@ -21,7 +19,7 @@ var router = (nav) => {
 
     adminRouter.route('/addBooks')
         .get((req,res) => {
-            var url = 'mongodb://localhost:27017/libraryApp';
+            var url = 'mongodb://adn1107:wav4wind2@ds157475.mlab.com:57475/heroku_33w7rsnn';
 
             mongodb.connect(url, (err, db) => {
                 var collection = db.collection('books');
