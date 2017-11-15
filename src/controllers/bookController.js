@@ -8,7 +8,7 @@ var bookController = (bookService, nav) => {
         //     res.redirect('/');
         // }
         next();
-    }
+    };
 
     var getIndex = (req,res) => {
         var url = 'mongodb://adn1107:wav4wind2@ds157475.mlab.com:57475/heroku_33w7rsnn';
@@ -72,6 +72,6 @@ var bookController = (bookService, nav) => {
         getById: getById
     };
 
-}
+};
 
 module.exports = bookController;

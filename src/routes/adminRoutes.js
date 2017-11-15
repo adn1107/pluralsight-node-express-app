@@ -33,6 +33,6 @@ var router = (nav) => {
 
     return adminRouter;
 
-}
+};
 
 module.exports = router;

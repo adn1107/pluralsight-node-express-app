@@ -4,7 +4,6 @@ const cookieParser = require('cookie-parser')
 const passport = require('passport')
 const session = require('express-session')
 
-
 const app = express()
 const port = process.env.PORT || 5000
 
@@ -41,11 +40,11 @@ app.use('/Auth', authRouter)
 
 app.get('/', (req, res) => {
     res.render('index',
-        {
+    {
         title: 'Hello from render',
         nav: nav
-        }
-    )
+    }
+)
 })
 
 app.listen(port, err => {

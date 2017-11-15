@@ -36,9 +36,9 @@ var goodreadsService = (params) => {
 
     return {
         getBookById: getBookById
-    }
+    };
 
 
-}
+};
 
 module.exports = goodreadsService;
