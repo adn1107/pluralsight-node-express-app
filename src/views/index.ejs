@@ -113,10 +113,18 @@
                       <div role="tabpanel" class="tab-pane active" id="home"><br>
                         <form action="/auth/signIn" method="post" name="signIpForm" class="form-inline" role="form">
 
-                          <div class="form-group">
+                          <!-- <div class="form-group">
                             <label class="sr-only" for="">Username:</label>
                             <input type="text" class="form-control" name="userName" id="userName" placeholder="Username">
                             <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                          </div> -->
+                          <div class="input-group margin-bottom-sm">
+                            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                            <input class="form-control" type="text" placeholder="Email address">
+                          </div>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                            <input class="form-control" type="password" placeholder="Password">
                           </div>
                           <button type="submit" class="btn btn-primary">Sign In</button>
                         </form>
@@ -125,10 +133,18 @@
                       <div role="tabpanel" class="tab-pane" id="tab"><br>
                         <form action="/auth/signUp" method="post" name="signUpForm" class="form-inline" role="form">
 
-                          <div class="form-group">
+                          <!-- <div class="form-group">
                             <label class="sr-only" for="">Username:</label>
                             <input type="text" class="form-control" name="userName" id="userName" placeholder="Username">
                             <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                          </div> -->
+                          <div class="input-group margin-bottom-sm">
+                            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                            <input class="form-control" type="text" placeholder="Email address">
+                          </div>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                            <input class="form-control" type="password" placeholder="Password">
                           </div>
                           <button type="submit" class="btn btn-primary">Sign Up</button>
                         </form>
